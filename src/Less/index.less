@@ -1,0 +1,102 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+  margin: 0;
+}
+.phone-container {
+  width: 310.5px; /* 小米 13 Pro 宽度的 75%（414px * 0.75） */
+  height: 654.75px; /* 小米 13 Pro 高度的 75%（873px * 0.75） */
+  border: 12px solid #000; /* 边框也缩小为 75% */
+  border-radius: 22.5px; /* 圆角缩小为 75% */
+  background: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-screen {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 0px;
+  background: #f8f8f8;
+  button {
+    padding: 10px;
+    border: none;
+    width: 103px;
+  }
+}
+
+.header,
+.body {
+  width: 95%;
+  margin: 0px auto;
+}
+.body img {
+  width: 64%;
+  margin: 10px 3px;
+  border-radius: 5px;
+}
+
+.buttonbox {
+  height: 65px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 20px;
+  span {
+    height: 60px;
+    width: 60px;
+    background-color: blue;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    margin-right: 30px;
+    font-size: 12px;
+  }
+}
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightblue;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: blue;
+}
+.weektime {
+  color: rgb(108, 112, 132);
+  font-size: 12px;
+}
+.something {
+  padding: 2px;
+  span {
+    color: rgb(16, 43, 81);
+    font-size: 20px;
+  }
+}
+.jwzx {
+  width: 70px;
+  height: 15px;
+  font-size: 10px;
+  background-color: rgb(175, 209, 251);
+  color: white;
+  line-height: 15px;
+  text-align: center;
+  border-radius: 0 10px 0 10px;
+}

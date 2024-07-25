@@ -1,21 +1,18 @@
-import RRLogo from './assets/favicon.ico';
-import './index.less'
-function App() {
+import './Less/index.less';
+
+import PropTypes from 'prop-types';
+function App({ children }) {
   return (
-    <div className="box">
-      <div className="pic">
-        <a
-          href="https://redrock.team/"
-          target="_blank"
-          rel="noreferrer"
-          className="w-16 h-16"
-        >
-          <img src={RRLogo} className="" alt="RedRockerLogo" />
-        </a>
+    //模拟小米13Pro手机的样子
+    <div className="app-container">
+      <div className="phone-container">
+        <div className="phone-screen">{children}</div>
       </div>
-      <p className='font'>点击图标，了解更多</p>
     </div>
   );
 }
+App.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default App;

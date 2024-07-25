@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+<!-- # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -27,4 +27,18 @@ export default {
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list -->
+
+## 介绍
+
+这是用react+vite尝试着做一个掌上重邮软件课表功能的复刻
+
+## 安装
+
+首先确保你的电脑具备了node.js环境，可以查看https://blog.csdn.net/Nicolecocol/article/details/136788200
+git clone https://github.com/Dhravya/cloudflare-saas-stack
+cd cloudflare-saas-stack
+
+## 使用方法
+
+pnpm run dev启动项目，在主页面点击课表查询进入课表，通过右上角的箭头左右切换查看最近课表
