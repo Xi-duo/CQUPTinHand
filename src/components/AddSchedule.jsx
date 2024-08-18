@@ -2,10 +2,13 @@ import '../Less/add.less';
 
 import PropTypes from 'prop-types';
 import { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 export default function NewComponent() {
+  const navigate = useNavigate();
   const inputRef = useRef(null);
   const [message, setMessage] = useState(['', '一个标题']);
   const [inputValue, setInputValue] = useState('');
+  const clicktimes = useRef(0);
   useEffect(() => {
     // 自动聚焦 input 框
     inputRef.current.focus();
@@ -21,6 +24,10 @@ export default function NewComponent() {
       setMessage([`标题:${inputValue}`, '具体内容']);
       setInputValue('');
       inputRef.current.focus();
+      clicktimes.current++;
+    }
+    if (clicktimes.current === 2) {
+      navigate('/arrange');
     }
   };
   return (
